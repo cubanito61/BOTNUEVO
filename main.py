@@ -238,7 +238,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'rockstar984'
+        tl_admin_user = 'Ubisoft_dev'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -556,7 +556,7 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             
-            msg = 'Bienvenido a mi rey espero que te guste mi bot de descarga y subidas 👨‍💻☁️ dueño y creador @rockstar984\n\n'
+            msg = 'Bienvenido espero que te guste mi bot de descarga y subidas 👨‍💻☁️ dueño y creador @Ubisoft_dev\n\n'
             msg+= 'Para saber como funciona esta versión solo use: /help\n'
             bot.editMessageText(message,msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -618,9 +618,9 @@ def onmessage(update,bot:ObigramClient):
             #    bot_token = os.environ.get('bot_token')
             #    
                 # set in debug
-            #    api_id = 16536294
-            #    api_hash = '0c780f6db3124fafbdc3dcde437e6f21'
-            #    bot_token = '5334312919:AAGjk7mJzXfbBP0nklrb_48yZQFzh_KSsm4'
+            #    api_id = 14916405
+            #    api_hash = 'a0fc9b87e79530619f67485238867a77'
+            #    bot_token = '5285357163:AAGh9SBnLbjke8opOi6IVZibUYsgcSzVf7w'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -636,7 +636,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5334312919:AAGjk7mJzXfbBP0nklrb_48yZQFzh_KSsm4'
+    bot_token = '5285357163:AAGh9SBnLbjke8opOi6IVZibUYsgcSzVf7w'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
